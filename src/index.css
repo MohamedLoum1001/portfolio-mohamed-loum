@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Arrière-plan global === */
+body {
+  background-image: linear-gradient(to bottom, #fff, #eff6ff 50%, #dbeafe 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: linear-gradient(to bottom, #111827, #1f2937 100%);
+  }
+}
+
+/* === Scroll fluide pour les ancres === */
+html {
+  scroll-behavior: smooth;
+}
+
+/* === Style actif sur les liens de navigation === */
+.nav-active {
+  color: #2563eb; /* Tailwind text-blue-600 */
+  font-weight: 600; /* Tailwind font-semibold */
+  position: relative;
+}
+@media (prefers-color-scheme: dark) {
+  .nav-active {
+    color: #7dd3fc; /* Tailwind text-blue-300 */
+  }
+}
+
+.nav-active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: underline 0.3s ease-in-out forwards;
+  border-radius: 2px;
+}
+
+@keyframes underline {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* === Curseur clignotant dans le Hero === */
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 24px;
+  color: #2b6cb0;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* === Flip card / perspective === */
+.perspective {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}

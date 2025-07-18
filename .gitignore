@@ -1,0 +1,2 @@
+# Empêche l'erreur liée à gh-pages
+node_modules/.cache/

@@ -1,0 +1,11 @@
+{
+  "tailwindCSS.experimental.classRegex": [
+    "tw`([^`]*)",
+    "tw\\(([^)]*)\\)",
+    "cn\\(([^)]*)\\)"
+  ],
+  "css.validate": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}
