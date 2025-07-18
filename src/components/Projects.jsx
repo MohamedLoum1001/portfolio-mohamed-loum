@@ -54,14 +54,14 @@ const projects = [
     title: "Niéféko",
     description:
       "Application Flutter pour la gestion des stocks et des ventes.",
-    image: "niefeko.png",
+    image: "niefeko.jpeg",
     technologies: ["flutter.png"],
     github: "https://github.com/Rama49/Niefeko",
   },
   {
     title: "KansAfrica",
     description: "Application de système de gestion dédiée à l'administration.",
-    image: "kansAfrica.png",
+    image: "kansAfrica.jpeg",
     technologies: ["react.png", "css.png"],
     github: "hhttps://github.com/assanebadji/FrontEnd_ProjetLo/tree/bamba_push_notify",
   },
