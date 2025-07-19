@@ -14,7 +14,7 @@ import mongodbIcon from "../assets/mongodb.png";
 import firebaseIcon from "../assets/firebase.png";
 import mysqlIcon from "../assets/mysql.png";
 import javascriptIcon from "../assets/javascript.png";
-import typescriptIcon from "../assets/typescript.png";
+import typescriptIcon from "../assets/redux.png";
 import htmlIcon from "../assets/html.png";
 import cssIcon from "../assets/css.png";
 import gitIcon from "../assets/git.png";
@@ -34,7 +34,7 @@ const skills = [
   { name: "Firebase", icon: firebaseIcon },
   { name: "MySQL", icon: mysqlIcon },
   { name: "JavaScript", icon: javascriptIcon },
-  { name: "TypeScript", icon: typescriptIcon },
+  { name: "Redux", icon: typescriptIcon },
   { name: "HTML", icon: htmlIcon },
   { name: "CSS", icon: cssIcon },
   { name: "Git", icon: gitIcon },
@@ -51,7 +51,7 @@ const Skills = () => {
       transition={{ duration: 0.6 }}
     >
       <h2 className="text-3xl font-semibold mb-10 text-blue-700 dark:text-blue-400">
-        Compétences Techniques
+        🛠️ Compétences Techniques
       </h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">

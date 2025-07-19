@@ -124,8 +124,8 @@ const Developpement = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
     >
-      <h2 className="text-3xl font-semibold mb-10 text-blue-700 dark:text-blue-400">
-        Développement
+      <h2 className="text-3xl font-bold mb-10 text-blue-700 dark:text-blue-400">
+        💻 Développement
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

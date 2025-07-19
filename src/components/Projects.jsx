@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
-import { Github } from "lucide-react";
+import { Github, } from "lucide-react";
 
 const projects = [
   {
@@ -27,11 +27,19 @@ const projects = [
     github: "https://mohamedloum1001.github.io/api-meteo/",
   },
   {
+    title: "Todo List CRUD",
+    description:
+      "Application de gestion de tâches (CRUD) développée avec React et Redux.",
+    image: "todoList.png",
+    technologies: ["react.png", "redux.png", "bootstrap.png"],
+    github: "https://todo-list-crud-react-redux.vercel.app/",
+  },
+  {
     title: "Sama Docteur",
     description:
-      "Sama Docteur est une application qui permet aux patients de prendre des rendez-vous en ligne.",
+      "Sama Docteur est un site qui permet aux patients de prendre des rendez-vous en ligne.",
     image: "sama-docteur.png",
-    technologies: ["angular.png", "spring.png", "mysql.png"],
+    technologies: ["angular.png", "spring.png", "mysql.png", "bootstrap.png"],
     github: "https://github.com/MohamedLoum1001/sama-docteur-frontend-angular",
   },
   {
@@ -39,15 +47,15 @@ const projects = [
     description:
       "App Flutter pour réserver des activités locales à Casablanca.",
     image: "insideCasa.jpeg",
-    technologies: ["flutter.png", "docker.png"],
+    technologies: ["flutter.png", "apiLogo.png", "docker.png"],
     github: "https://github.com/MohamedLoum1001/inside-casa-app-flutter",
   },
   {
     title: "Load Document",
     description:
-      "Application Angular pour charger des documents et les afficher.",
+      "Un site pour charger des documents et les afficher.",
     image: "load.png",
-    technologies: ["angular.png"],
+    technologies: ["angular.png", "bootstrap.png"],
     github: "https://load-document-angular.vercel.app/login",
   },
   {
@@ -55,7 +63,7 @@ const projects = [
     description:
       "Application Flutter pour la gestion des stocks et des ventes.",
     image: "niefeko.jpeg",
-    technologies: ["flutter.png"],
+    technologies: ["flutter.png", "apiLogo.png",],
     github: "https://github.com/Rama49/Niefeko",
   },
   {
@@ -70,15 +78,23 @@ const projects = [
     description:
       "Mise en place d'une architecture de microservices avec Docker, Kafka et MongoDB.",
     image: "docker.png",
-    technologies: ["docker.png", "mongodb.png"],
+    technologies: ["docker.png", "mongodb.png", "html.png", "css.png", "javascript.png"],
     github: "https://github.com/MohamedLoum1001/docker-kafka-mongo",
+  },
+  {
+    title: "Gesttion Bancaire",
+    description:
+      "Application de gestion bancaire développée en Python.",
+    image: "python.png",
+    technologies: ["python.png", "json.png"],
+    github: "https://gitlab.com/mohamedloum1001/gestion-bancaire-python",
   },
   {
     title: "Chatbot Intelligent",
     description:
       "Mise en place d'un chatbot intelligent utilisant Python, Flask et MySQL.",
     image: "python.png",
-    technologies: ["python.png", "flask.png", "mysql.png"],
+    technologies: ["python.png", "flask.png", "mysql.png", "html.png", "css.png"],
     github: "https://github.com/MohamedLoum1001/chatbot-intelligent",
   },
 ];
@@ -117,7 +133,7 @@ const Projects = () => {
                   <h3 className="text-lg font-semibold text-blue-600 dark:text-blue-300 mb-2">
                     {project.title}
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
+                  <p className="text-gray-700 dark:text-gray-300 text-sm  text-justify leading-relaxed mb-4">
                     {project.description}
                   </p>
                 </div>

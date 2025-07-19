@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           {/* WhatsApp */}
           <a
-            href="https://wa.me/212770000000" // ← Remplace par ton numéro
+            href="https://wa.me/221776452606" // ← Remplace par ton numéro
             target="_blank"
             rel="noopener noreferrer"
             title="WhatsApp"
