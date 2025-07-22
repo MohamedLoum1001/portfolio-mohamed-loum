@@ -27,6 +27,46 @@ const projects = [
     github: "https://mohamedloum1001.github.io/api-meteo/",
   },
   {
+    title: "Année Bissextile",
+    description:
+      "Application web pour vérifier si une année est bissextile.",
+    image: "annee-bissextile.png",
+    technologies: ["javascript.png", "bootstrap.png"],
+    github: "https://annee-bissextille-js.vercel.app/",
+  },
+  {
+    title: "Crud App",
+    description:
+      "Application web pour gérer un CRUD (Create, Read, Update, Delete) d'éléments.",
+    image: "crud.png",
+    technologies: ["javascript.png", "bootstrap.png"],
+    github: "https://crud-js-umber.vercel.app/",
+  },
+  {
+    title: "Portfolio",
+    description:
+      "Intégration de la tâche de création d'un portfolio avec React js et Bootstrap.",
+    image: "portfolio.png",
+    technologies: ["react.png", "bootstrap.png"],
+    github: "https://portfolio-react-tache-un.vercel.app/",
+  },
+  {
+    title: "Sunnyside",
+    description:
+      "Sunnyside est un site web statique développé avec React et Bootstrap.",
+    image: "sunnyside.png",
+    technologies: ["react.png", "bootstrap.png"],
+    github: "https://integration-un-react.vercel.app/",
+  },
+  {
+    title: "Brandname",
+    description:
+      "Brandname est un site web statique développé avec React et Bootstrap.",
+    image: "brandname.png",
+    technologies: ["react.png", "bootstrap.png"],
+    github: "https://integration-un-react.vercel.app/",
+  },
+  {
     title: "Todo List CRUD",
     description:
       "Application de gestion de tâches (CRUD) développée avec React et Redux.",
