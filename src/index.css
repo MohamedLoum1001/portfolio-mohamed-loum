@@ -20,13 +20,17 @@ html {
 
 /* === Style actif sur les liens de navigation === */
 .nav-active {
-  color: #2563eb; /* Tailwind text-blue-600 */
-  font-weight: 600; /* Tailwind font-semibold */
+  color: #2563eb;
+  /* Tailwind text-blue-600 */
+  font-weight: 600;
+  /* Tailwind font-semibold */
   position: relative;
 }
+
 @media (prefers-color-scheme: dark) {
   .nav-active {
-    color: #7dd3fc; /* Tailwind text-blue-300 */
+    color: #7dd3fc;
+    /* Tailwind text-blue-300 */
   }
 }
 
@@ -59,8 +63,15 @@ html {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 /* === Flip card / perspective === */
@@ -78,4 +89,26 @@ html {
 
 .backface-hidden {
   backface-visibility: hidden;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in-out {
+  animation: fade-in-out 3s ease-in-out;
 }
