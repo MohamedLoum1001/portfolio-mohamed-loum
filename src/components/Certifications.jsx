@@ -7,6 +7,8 @@ import { useState } from "react";
 import jsCertThumb from "../assets/certifs/certif-javascript.png";
 import reactCertThumb from "../assets/certifs/certif-react.png";
 import angularCertThumb from "../assets/certifs/certif-angular.png";
+import djangoCertThumb from "../assets/certifs/certif-django.png";
+
 
 const certifications = [
   {
@@ -26,6 +28,12 @@ const certifications = [
     image: angularCertThumb,
     download: "/certifs/certif-angular.pdf",
     qr: "https://www.linkedin.com/learning/certificates/8ee03da22918ac08e7ede006da1dc846154c978914f817821a41c1e68cf16ca2",
+  },
+  {
+    title: "Django",
+    image: djangoCertThumb,
+    download: "/certifs/certif-angular.pdf",
+    qr: "https://www.linkedin.com/learning/certificates/64481ffa90d1af63c6e830151252d5cbc5ba513428d737c0a2b86bed3cd388c9?trk=share_certificate",
   },
 ];
 
