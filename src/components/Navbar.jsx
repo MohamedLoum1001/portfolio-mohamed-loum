@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Sun, Moon } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const [dark, setDark] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [themeToggleKey, setThemeToggleKey] = useState(0); // pour relancer l’animation
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
@@ -21,15 +23,22 @@ const Navbar = () => {
     { name: "Contact", id: "contact" },
   ];
 
+  const handleToggleTheme = () => {
+    setDark(!dark);
+    setThemeToggleKey((prev) => prev + 1); // relancer anim
+  };
+
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-md transition duration-300">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center min-h-[64px]">
-        {/* Logo */}
-        <div className="text-xl font-bold text-blue-700 dark:text-blue-400">
-          MohamedLoum.dev
+        {/* LOGO */}
+        <div className="flex items-center gap-2">
+          <span className="font-bold text-blue-700 dark:text-blue-400">
+            MohamedLoum.dev
+          </span>
         </div>
 
-        {/* Liens navigation - desktop */}
+        {/* LINKS - desktop */}
         <ul className="hidden md:flex space-x-6 text-sm font-medium text-gray-800 dark:text-gray-200">
           {links.map((link) => (
             <li key={link.id}>
@@ -48,11 +57,11 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* Icônes à droite */}
+        {/* ICONES DROITES */}
         <div className="flex items-center gap-3">
           {/* WhatsApp */}
           <a
-            href="https://wa.me/221776452606" // ← Remplace par ton numéro
+            href="https://wa.me/221776452606"
             target="_blank"
             rel="noopener noreferrer"
             title="WhatsApp"
@@ -61,16 +70,32 @@ const Navbar = () => {
             <Phone className="w-5 h-5" />
           </a>
 
-          {/* Mode sombre */}
-          <button
-            onClick={() => setDark(!dark)}
+          {/* DARK MODE - animé */}
+          <motion.button
+            onClick={handleToggleTheme}
             aria-label="Basculer le mode sombre"
-            className="text-sm px-2 py-1 rounded border dark:border-gray-400 dark:text-white"
+            className="relative w-10 h-10 rounded-full border dark:border-gray-500 flex items-center justify-center bg-white dark:bg-gray-800 hover:scale-105 transition"
+            title="Changer de thème"
+            whileTap={{ scale: 1.3 }} // effet zoom type volume
           >
-            {dark ? "☀️" : "🌙"}
-          </button>
+            <AnimatePresence mode="wait">
+              <motion.span
+                key={themeToggleKey}
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 1.5, opacity: 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                {dark ? (
+                  <Sun className="w-5 h-5 text-yellow-400" />
+                ) : (
+                  <Moon className="w-5 h-5 text-blue-400" />
+                )}
+              </motion.span>
+            </AnimatePresence>
+          </motion.button>
 
-          {/* Bouton mobile */}
+          {/* MENU MOBILE */}
           <button
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Menu"
@@ -81,7 +106,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Menu mobile */}
+      {/* MENU MOBILE OUVERT */}
       {isOpen && (
         <ul className="md:hidden bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 px-6 py-4 space-y-4 shadow-md">
           {links.map((link) => (

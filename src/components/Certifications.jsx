@@ -7,9 +7,6 @@ import { useState } from "react";
 import jsCertThumb from "../assets/certifs/certif-javascript.png";
 import reactCertThumb from "../assets/certifs/certif-react.png";
 import dataCertThumb from "../assets/certifs/certif-data.png";
-import dockerCertThumb from "../assets/certifs/certif-docker.png";
-import angularCertThumb from "../assets/certifs/certif-angular.png";
-import djangoCertThumb from "../assets/certifs/certif-django.png";
 
 
 const certifications = [
@@ -28,21 +25,6 @@ const certifications = [
     image: dataCertThumb,
     download: "/certifs/certif-react.pdf",
     qr: "https://www.freecodecamp.org/certification/mohamedloum1001/data-visualization",
-  },
-  {
-    title: "Angular",
-    image: angularCertThumb,
-    qr: "https://www.linkedin.com/learning/certificates/8ee03da22918ac08e7ede006da1dc846154c978914f817821a41c1e68cf16ca2",
-  },
-  {
-    title: "Docker",
-    image: dockerCertThumb,
-    qr: "https://www.linkedin.com/learning/certificates/efd4b2d1711c8c6dde2088e7fb970fe46988682aebe64559ac8966591b9cb618?u=56745737",
-  },
-  {
-    title: "Django",
-    image: djangoCertThumb,
-    qr: "https://www.linkedin.com/learning/certificates/64481ffa90d1af63c6e830151252d5cbc5ba513428d737c0a2b86bed3cd388c9?trk=share_certificate",
   },
 ];
 
