@@ -4,7 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
 import headerImg from "../assets/header-img.svg";
-import cvFile from "../assets/CV-Mohamed-Loum-Développeur.pdf";
+import cvFile from "../assets/cv/CV-Mohamed-Loum-Développeur.pdf";
 
 const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
