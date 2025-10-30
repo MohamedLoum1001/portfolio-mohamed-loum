@@ -43,6 +43,14 @@ const projects = [
     github: "https://crud-js-umber.vercel.app/",
   },
   {
+    title: "Futsal Africa Show",
+    description:
+      "Application web pour suivre les événements de futsal en Afrique.",
+    image: "futsal.png",
+    technologies: ["react.png", "tailwind.png", "firebase.png"],
+    github: "https://portfolio-react-tache-un.vercel.app/",
+  },
+  {
     title: "Portfolio",
     description:
       "Intégration de la tâche de création d'un portfolio avec React js et Bootstrap.",

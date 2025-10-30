@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
-import ynovLogo from "../assets/ynov.png";
+import ynovLogo from "../assets/ParisYnovLogo.png";
 import bakeliLogo from "../assets/bakeli.png";
 import uvsLogo from "../assets/uvs.png";
 import ekrLogo from "../assets/ekr.png";
 
 const formations = [
   {
-    diplome: "Master 1 en Développement Fullstack",
-    ecole: "Maroc Ynov Campus, Casablanca",
-    annee: "Octobre 2024 – Juin 2025",
+    diplome: "Master en Développement Fullstack",
+    ecole: "Paris Ynov Campus, Paris",
+    annee: "Octobre 2024 – aujourd'hui",
     logo: ynovLogo,
   },
   {

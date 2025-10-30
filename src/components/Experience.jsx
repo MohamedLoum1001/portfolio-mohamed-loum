@@ -4,23 +4,32 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    entreprise: "Volkeno",
-    poste: "Développeur Web & Mobile",
-    periode: "2023",
+    entreprise: "IDG Maroc",
+    poste: "Développeur Web",
+    periode: "Août 2025 – Octobre 2025",
     details: [
-      "Site Web Easy Market (React)",
-      "Application Delivery Food (React Native)",
-      "Kili App (Flutter + Firebase)",
+      "Développement complet du site web Sama Docteur avec React.js, Bootstrap, Tailwind CSS et Firebase.",
+      "Projet réalisé en autonomie : conception, intégration, gestion des données et déploiement.",
     ],
   },
   {
     entreprise: "Niéféko",
     poste: "Développeur Mobile",
-    periode: "2024",
+    periode: "Mars 2024 – Juin 2024",
     details: [
       "Application Flutter connectée à une API externe",
       "Intégration responsive et dynamique",
       "Optimisation des performances",
+    ],
+  },
+  {
+    entreprise: "Volkeno",
+    poste: "Développeur Web & Mobile",
+    periode: "Septembre 2023 – Décembre 2023",
+    details: [
+      "Integration des pages du site web Easy Market (React)",
+      "Integration des pages de l'application Delivery Food (React Native)",
+      "Développement du site web Kili App (Flutter + Firebase)",
     ],
   },
 ];
