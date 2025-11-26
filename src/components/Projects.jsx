@@ -48,7 +48,7 @@ const projects = [
       "Application web pour suivre les événements de futsal en Afrique.",
     image: "futsal.png",
     technologies: ["react.png", "tailwind.png", "firebase.png"],
-    github: "https://portfolio-react-tache-un.vercel.app/",
+    github: "https://www.futsalshowafrica.com",
   },
   {
     title: "Portfolio",
