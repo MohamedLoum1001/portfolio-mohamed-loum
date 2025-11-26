@@ -1,15 +1,23 @@
 import { motion } from "framer-motion";
 import ynovLogo from "../assets/ParisYnovLogo.png";
+import casablancaYnovLogo from "../assets/casablancaYnovCampus.png";
+
 import bakeliLogo from "../assets/bakeli.png";
 import uvsLogo from "../assets/uvs.png";
 import ekrLogo from "../assets/ekr.png";
 
 const formations = [
   {
-    diplome: "Master en Développement Fullstack",
+    diplome: "Master 2 en Développement Fullstack",
     ecole: "Paris Ynov Campus, Paris",
-    annee: "Octobre 2024 – aujourd'hui",
+    annee: "Octobre 2024 – en cours",
     logo: ynovLogo,
+  },
+  {
+    diplome: "Master 1 en Développement Fullstack",
+    ecole: "Casablanca Ynov Campus, Casablanca",
+    annee: "Octobre 2024 – Juin 2025",
+    logo: casablancaYnovLogo,
   },
   {
     diplome: "Formation en Programmation",
