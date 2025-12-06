@@ -4,7 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
 import headerImg from "../assets/header-img.svg";
-import cvFile from "../assets/cv/CV_Mohamed_Loum_Développeur.pdf";
+import cvFile from "../assets/cv/CV-Mohamed-Loum-Développeur.pdf";
 
 const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -127,7 +127,7 @@ const Hero = () => {
               {/* Bouton Télécharger */}
               <a
                 href={cvFile}
-                download="CV_Mohamed_Loum_Développeur.pdf"
+                download="CV-Mohamed-Loum-Développeur.pdf"
                 className="inline-flex items-center px-4 py-2 text-sm font-medium text-blue-600 dark:text-blue-300 border border-blue-300 dark:border-blue-600 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-800 transition"
               >
                 <Download className="w-4 h-4 mr-2" />
